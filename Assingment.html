@@ -1,0 +1,88 @@
+<html>
+<head>
+  <title>My Web Page</title>
+  <style>
+    body {
+        background-image: url('background.webp');
+        width:100%;
+        height:auto;
+    }
+    .alert {
+         display: none;
+         background-color: rgb(252, 219, 219);
+         border: 1px solid green;
+         position: fixed;
+         height: 80px;
+         width: 250px;
+         left: 40%;
+         top: 2%;
+         padding: 6px 8px 8px;
+         text-align: center;
+      }
+    .image {
+      width: 230px;
+      height: 150px;
+      padding: 15px;
+    }
+    .animate-charcter {
+      text-transform: uppercase;
+      background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 2s linear infinite;
+      font-size: 50px;
+      
+    }
+    @keyframes textclip {
+      to {
+        background-position: 200% center;
+        
+      }
+    }
+  </style>
+</head>
+<body >
+       
+        
+  <h1 class="animate-charcter" style="text-align: center;font-family: Arial;color: rgb(255, 0, 0);">WELCOME TO FLOWER WORLD</h1>
+  <p style=" font-family:sans-serif; font-size: 20; color :blue;">Please select the flower that you want</font></p>
+  <img class="image" src="temple.jpg" alt="Temple Flower" onclick="myFunction(this)">
+  <img class="image" src="sunflower.jpg" alt="Sunflower Flower"  onclick="myFunction(this)">
+  <img class="image" src="lotus.jpg" alt="Lotus Flower" onclick="myFunction(this)">
+  <img class="image" src="jasmine.webp" alt="Jasmine Flower" onclick="myFunction(this)">
+  <img class="image" src="anthuriam.webp" alt="Anthuriam Flower" onclick="myFunction(this)">
+</br>
+<h4 style="font-family: Arial;color: rgb(174, 0, 255);">You can get following services from out shop from selected flowers</h4>
+    <ul type = "disc" style="font-family: Arial;color: rgb(104, 4, 4);">
+    <li>Arranging flower bouquet</li>
+    <li>Wedding car decorations</li>
+    <li>Birthday decorations</li>
+    <li>Wedding hall decorations</li></ul><br>
+
+    <h4 style="font-family: Arial;color: rgb(174, 0, 255);">The prices are listed below</h4>
+    <table border="1">
+        <caption>Price List</caption>
+        <th>Service</th><th>Price(Rs)</th>
+       <tr><td>Arranging flower bouquet</td><td>1000.00-5000.00</td></tr>
+       <tr><td>Wedding car decorations</td><td>4000.00-15000.00</td></tr>
+       <tr><td>Birthday decorations</td><td>5000.00-25000.00</td></tr>
+       <tr><td>Wedding hall decorations</td><td>20000.00-50000.00</td></tr>
+
+    </table><br><br>
+    <p><b>If you want to more details please visit following links ......</b></p>
+    <a href="https://www.youtube.com/@IyonaChithrasena">Our youtube Channel</a></body><br>
+    <a href="https://www.facebook.com/profile.php?id=100027352734212">Our facebook Page</a><br>
+    <a href="https://www.blogger.com/blog/post/edit/6086435489971362259/6119730689154299605?hl=en">Our blog</a><br>
+    <p style="color:rgb(75, 6, 46)"><b>Please feel free contact us from following links at any time ......</b></p>
+    <a href=" https://wa.me/+94712127227">whatsapp</a><br>
+    <a href="mailto:iyonawaduge@gmail.com">Email</a>
+
+  <script>
+    function myFunction(element) {
+      alert(element.alt);
+
+    }
+  </script>
+</body>
+</html>
